@@ -191,4 +191,4 @@ console.log(obj.hasOwnProperty('Nam')); */ // false
     address: 'hy'
 };
 
-console.log(Object.keys(obj).length) */ // Returns the length of an array.
+console.log(Object.keys(obj).length) */ // Returns the length of an given array
