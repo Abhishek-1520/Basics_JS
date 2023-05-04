@@ -1,0 +1,63 @@
+<mxfile host="65bd71144e">
+    <diagram id="3-AD2jTmMEOFG4PVyVC_" name="Page-1">
+        <mxGraphModel dx="746" dy="1542" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Java Script code" style="swimlane;startSize=32;" vertex="1" parent="1">
+                    <mxGeometry x="15" y="-1065" width="104" height="257" as="geometry">
+                        <mxRectangle x="15" y="-1068" width="91" height="265" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="" style="shape=ext;double=1;whiteSpace=wrap;html=1;aspect=fixed;rotation=90;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="-1068" width="147" height="147" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="CAll stack" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="286" y="-1095" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Global Execution context" style="text;align=center;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="248" y="-954.5" width="146" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="WEB-API" style="swimlane;strokeColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="556" y="-1065" width="125" height="238" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Hold Asynchronous code" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="8">
+                    <mxGeometry x="2" y="25" width="123" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Set-timeout&lt;br&gt;clear timeout&amp;nbsp;&lt;br&gt;set interval&lt;br&gt;clear interval&lt;br&gt;&lt;br&gt;promises" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="8">
+                    <mxGeometry x="7" y="100" width="111" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Hold synchronous code" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="255.5" y="-1058" width="131" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Function Execution Context" style="text;strokeColor=#001DBC;align=center;fillColor=#0050ef;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="-984.5" width="144" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=delay;whiteSpace=wrap;html=1;strokeColor=default;rotation=-180;" vertex="1" parent="1">
+                    <mxGeometry x="408" y="-771" width="298" height="71" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="shape=delay;whiteSpace=wrap;html=1;strokeColor=default;rotation=-180;" vertex="1" parent="1">
+                    <mxGeometry x="408" y="-679" width="301" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Micro Queue or Job Queue" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="469" y="-771" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Macro Queue or Call Back Queue" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="469" y="-676" width="192" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Promises are having First priority&amp;nbsp;" style="text;strokeColor=#2D7600;align=center;fillColor=#60a917;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="463.5" y="-741" width="187" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Set-timeout,clear timeout,set interval,clear interval,promises" style="text;strokeColor=#2D7600;align=center;fillColor=#60a917;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="441" y="-646" width="253" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="shape=lineEllipse;line=vertical;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;strokeColor=default;rotation=-90;" vertex="1" parent="1">
+                    <mxGeometry x="242" y="-821" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Event Loop" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="241" y="-808" width="81" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
