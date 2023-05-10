@@ -30,6 +30,8 @@
 /* let prom = new Promise((resolve,reject)=>{
     reject('Your promise is rejected')
     resolve('Your promise is resolved ')
+
+    //*consuming promise
 }).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)}) */
 
 //? Using Set_Time_out()
@@ -149,3 +151,54 @@ setTimeout((para1)=>{
         },2000,'bro')
     },2000,'Choudhary')
 },2000,'Abhishek') */
+
+//! Practice Questions.
+//* 1..
+/* const data = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('Set Time out is working now') // Macro Queue
+    },2000);
+    resolve('Promise is working now') // very First priority outside the block.
+}).then((result)=>{console.log(result);}).catch((error)=>{console.log(error);}) */
+
+//* 2..
+/* const data = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('Promise is working now') 
+        console.log('Set Time out is working now') 
+    },2000);
+    
+}).then((result)=>{console.log(result);}).catch((error)=>{console.log(error);}) */
+
+//* 3..
+/* const data = new Promise((res,rej)=>{
+    setTimeout(()=>{
+        res('Set time out resolved now')
+    },2000)
+    console.log('Synchronous run first')
+}).then((res)=>{console.log(res)}) */
+
+//* 4.. Pushed and element into an array..
+
+/* let data = ['Abhishek'];
+let funpro = ()=>{
+    const prom = new Promise((Added,refused)=>{
+        if(data.length>0){
+            data.push(parseInt(prompt('Enter the element you want to add')));
+            console.log("Your new array element is in a process..please wait");
+            setTimeout(()=>{
+                    Added("Your promise is working")
+                    console.log('The new Data is',data);
+            },3000)
+        }else{
+            refused('Element can\'t be processed');
+            console.log('Your value is not pushed in an array')
+        }
+    }).then((result)=>{
+        console.log(result);
+    }).catch((error)=>{
+        console.log(error);
+    })
+}
+console.log(data);
+funpro(); */
