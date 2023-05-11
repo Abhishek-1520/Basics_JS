@@ -107,3 +107,75 @@ console.log(arr) // array */
 /* const arr = [1,2,3,4,5,5];
 const fe = arr.forEach((i,index)=> console.log(i, index));
 console.log(fe); // undefined  */
+
+
+//? sort() : Sort or arrange the array elements in the alphabatical order.
+
+// const arr =['Abhishek','Choudary','B-block','Rahispur','Govindpuram']
+// console.log(arr.sort()); // ['Abhishek', 'B-block', 'Choudary', 'Govindpuram', 'Rahispur']
+
+//? reverse() : It reverse the array elements.
+
+// const arr = [1,2,3,4,5,6,7]
+// console.log(arr.reverse())
+
+//? includes() : Returns the boolean value and check whether the  element is present or not.
+
+// const arr = [9810,98989,999,0000]
+// console.log(arr.includes(0000)); // true / false
+
+//? concat() : It concat the elements of one array with another array or add the elements.
+
+// const arr = ['hello','Guys','what','?']
+// console.log(arr.concat('well','or','not'));
+
+// const arr = [1,2,3,43,4,5,6,6]
+// const arr2 = ['abhishek']
+
+// const res = arr2.concat(arr)
+// console.log(res)
+
+
+//? Join() : It joins the array elements into a string type.
+
+// const arr =['Abhishek','Choudhary','Blue']
+// console.log(arr.join(' '))
+
+//? slice(start,end+1) : It removes the part of the elements from the existing array elements.
+
+//  const arr = ['hello','Abhishek','Choudhary','Are','you','from']
+//  console.log(arr.slice(1,3))  //['Abhishek', 'Choudhary']
+
+//? Splice(index, delete or remains, value) : elements can be inserted in between and can be deleted.
+
+//  const arr = ['hello','what','are','doing']
+//  arr.splice(1,0,'Abhishek','choudhary')
+//  console.log(arr)
+
+//? isArray() : It checks whether the variable is an array or not, returns the array elements.
+
+// const arr = [1]
+// console.log(Array.isArray(arr)) // true
+
+//? find(function) : Return the value who passes the condition from starting.
+
+// const arr = [1,2,30,3,4]
+// console.log(arr.find(serch))
+// function serch(vari){
+//     return vari>=20
+// }
+
+//? findindex(function) : Returns the index number of that value who passes the condition.
+
+// const arr = [23,45,67,89]
+// console.log(arr.findIndex(ind))
+// function ind(sr){
+//     return sr>=20
+// }
+
+//? tostring method : it convert the whole array element into the string 
+//* Once the condition applied to string than no operation will work on it.
+
+// const arr = [12345,'Aman','Anuj']
+// console.log(arr.toString());
+// console.log(arr)
