@@ -202,3 +202,203 @@ let funpro = ()=>{
 }
 console.log(data);
 funpro(); */
+
+//! Methods of Promises.
+
+//? Promise.all(): It can store multiple promises and check those promises at a time.
+//?                It removes the complexity  of writting then and catch function again and again.
+//?                If any one promise is rejected than no other promise work here only catch function will be execited.
+
+
+// let prom1 = new Promise((res,rej)=>{
+//     setTimeout(()=>{
+//         a = 20;
+//         console.log("This is first promise");
+//         res('Resolved bro');
+//     },2000)
+// })
+
+// let prom2 = new Promise((res,rej)=>{
+//     setTimeout(()=>{
+//         b = 30;
+//         console.log('Hello guys, This is second promise');
+//         rej('Rejected yarr');
+//     },2000)
+// })
+
+// let prom3 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         c = 40;
+//         console.log('Hello sir, this is third promise')
+//         res('Resolved sir')
+//     }, 2000);
+// })
+
+// Promise.all([prom1,prom2,prom3]).then((res)=>{
+//     console.log(res);
+//     let d = a+b+c;
+//     console.log(d)
+// }).catch((err)=>{
+//     console.log(err)
+// })
+
+//* In case of rejecting a promise:
+
+// let prom1 = new Promise((res,rej)=>{
+//     setTimeout(()=>{
+//         a = 20;
+//         //console.log("This is first promise");
+//         res('Resolved bro');
+//     },2000)
+// })
+
+// let prom2 = new Promise((res,rej)=>{
+//     setTimeout(()=>{
+//         b = 30;
+//         //console.log('Hello guys, This is second promise');
+//         rej('Rejected yarr');
+//     },2000)
+// })
+
+// let prom3 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         c = 40;
+//         //console.log('Hello sir, this is third promise')
+//         res('Resolved sir')
+//     }, 2000);
+// })
+
+// Promise.all([prom1,prom2,prom3]).then((res)=>{
+//     console.log(res);
+//     let d = a+b+c;
+//     console.log(d)
+// }).catch((err)=>{
+//     console.log('so this is',err)
+// })
+
+//? promise.allsettled([]): It waits for all promises to fulfilled or rejected, and returns the array 
+//?                         In which object is describing about promise status, value, error-reason.
+
+// const prom = new Promise((res,rej)=>{
+//     console.log("The first promise is resolved");
+//     setTimeout(()=>{res('Reseoved First')},3000);
+// })
+
+// const prom_1 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         console.log('Second promise starts working');
+//         rej('Promise rejected');
+//         if(0){console.log(True)};
+//     }, 2000);
+// })
+
+// Promise.allSettled([prom,prom_1]).then((result)=>{
+//     console.log('Resolved promises are here',result);
+// }).catch((error)=>{
+//     console.log('Error found here ', error);
+// })
+
+
+//? promise.any([]): It will only return the resolved promise with less time and skip the rejected promise.
+
+// const prom1 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         console.log('Hello first working')
+//         rej('Promise rejected')
+//     }, 2000);
+// })
+
+// const prom2 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         console.log('Hello second promise');
+//         res('Bro resolved in 4 sec')
+//     }, 4000);
+// })
+
+// const prom3 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         console.log('Hello third promise')
+//         rej('Rejected but')
+//     }, 1000);
+// })
+
+// Promise.any([prom1,prom2,prom3]).then((result)=>{
+//     console.log(result);
+// }).catch((err)=>{
+//     console.log('error',err)
+// })
+
+//? Promise.race([]): When you only want result from the firstly resolved promise no mattter its rejected or not.
+
+// const prom1 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         //console.log('Hello first working')
+//         rej('first Promise rejected')
+//     }, 9000);
+// })
+
+// const prom2 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         //console.log('Hello second promise');
+//         res('Bro resolved second')
+//     }, 2000);
+// })
+
+// const prom3 = new Promise((res,rej)=>{
+//     setTimeout(() => {
+//         //console.log('Hello third promise')
+//         rej('Rejected but third')
+//     }, 3000);
+// })
+
+// Promise.race([prom1,prom2,prom3]).then((result)=>{
+//     console.log(result)
+// }).catch((erre)=>{
+//     console.log(erre)
+// })
+
+//! Writting a promise in different ways.
+
+// let prom_fun = (mess,value)=>{
+//     return function(res,rej){
+//         setTimeout(() => {
+//             console.log(`The ${mess} is working and value is ${value}`);
+//         }, 3000);
+//         res('promise ressolved here')
+//     }
+// }
+
+// const prom = new Promise(prom_fun('first promise',34))
+// const prom1 = new Promise(prom_fun('second promise',30))
+
+// Promise.all([prom,prom1]).then((resu)=>{
+//     console.log(resu)
+// }).catch((err)=>{
+//     console.log(err)
+// })
+
+//! promise.any() shorter syntax.
+
+// let promfun= (status)=>{
+//     return (resolve,rejected)=>{
+//             setTimeout(() => {
+//                 if (status == 'first promise'){
+//                     console.log(status);
+//                     resolve('Promise resloved');
+//                 }else {
+//                     console.log("Enter correct value in status." , status)
+//                     rejected('Here your promises is rejected.')
+//                 }      
+//             }, 1000); 
+//     }
+// }
+
+
+// let prom1 = new Promise(promfun('first promise'))
+// let prom2 = new Promise(promfun('second promise'))
+
+// Promise.any([prom1,prom2]).then((result)=>{
+//     console.log(result);
+// }).catch((err)=>{
+//     console.log(err)
+// })
