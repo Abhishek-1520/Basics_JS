@@ -116,4 +116,4 @@
 // }
 
 // call()
-// console.log('After initialzation of promise ')
+// console.log('After initialzation of promise  ')
