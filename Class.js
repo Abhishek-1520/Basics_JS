@@ -74,8 +74,8 @@ console.log(myobj); */ // student {} [[Prototype]] :  Object
 
 
  //? Constructor and method function.
-
- /* class student {
+/* 
+   class student {
     constructor(){
         this.n = prompt('ENter name');
     }
@@ -89,8 +89,8 @@ console.log(myobj); */ // student {} [[Prototype]] :  Object
 }
  let obj = new student();
  obj.grp(); 
- student.grp(); */ //TypeError: student.grp is not a function
-
+ student.grp(); //TypeError: student.grp is not a function
+ */
 
 
 
