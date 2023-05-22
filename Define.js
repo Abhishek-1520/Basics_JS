@@ -1,4 +1,4 @@
-//! Q What is Java Script ?
+(//! Q What is Java Script ?
 //? Java script is Scripting language.
 //? It's a synchronous language execute the code step or sequence by sequence.
 //? It's an Interpreter language execute the code line by line.
@@ -88,8 +88,33 @@
 //! Call 
 //? It calls the one object property with in another object by passing arguments also. It works with the function only.
 
-//! Type
+//! Apply
 //? In type work is same as Call but arguments are passed in Array format.
 
 //! Bind 
 //? Function is binded and we can call it anywhere at any time.
+
+//! Class
+//? A class is a template or a blueprint for an object.
+//? A class is dynamic in nature.
+//? A class is a life-cycle.
+
+//* Functions and types of function in a class.
+//? Cunstructor() : USed to define the properties of an object and automatically called while craeting an object of a class.
+
+//? Method() : it's a user-defined function and manually invoked like an function.
+
+//? Static() : It's a static function of an class, it can be called with the class name.
+//?            Properties can't be accessed by any method or a cunstructor function.
+
+//* Class-inheritance
+//? To inherit the content of one parent class to another class which is called  child class.
+//? class CHILD extends PARENT{ }
+
+//* Using of a (new) keyword while creating a object, promises etc.
+//? Responsible for invoking a cunstructor and creating a new unique instance at every single time.
+//? If we don't use the new keyword then it will return undefined.
+
+//! Super()
+//? A new function in javascript used in inheritence only.
+
